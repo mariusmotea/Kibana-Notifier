@@ -1,0 +1,16 @@
+[Unit]
+Description=Kibana Notifier
+After=multi-user.target
+
+[Service]
+Type=idle
+Restart=always
+RestartSec=30
+StartLimitInterval=200
+StartLimitBurst=5
+
+WorkingDirectory=/opt/kibana_notifier
+ExecStart=/opt/kibana_notifier/kibana_notifier.py
+
+[Install]
+WantedBy=multi-user.target
