@@ -5,7 +5,7 @@ import smtplib
 
 
 smtp_server = "10.x.x.x"
-recipients = "mariusmotea@xxxxxxx.com"
+recipients = ["mariusmotea@xxxxxxx.com"]
 subject = "Alert from Kibana"
 sender_address = "elastic@xxxxxxx.com"
 
