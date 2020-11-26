@@ -4,10 +4,10 @@ import json
 import smtplib
 
 
-smtp_server = "10.x.x.x"
-recipients = ["mariusmotea@xxxxxxx.com"]
+smtp_server = "smtp.test.org"
+recipients = ["marius.motea@test.org"]
 subject = "Alert from Kibana"
-sender_address = "elastic@xxxxxxx.com"
+sender_address = "elastic@test.org"
 
 def sendMail(TEXT):
     """this is some test documentation in the function"""
