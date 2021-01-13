@@ -30,4 +30,4 @@ container = client.containers.get('kib01')
 for line in container.logs(stream=True, tail=10):
     record = json.loads(line)
     if record["type"] == "log" and "error" in record["tags"]:
-        sendMail(record["message"]
+        sendMail(record["message"])
